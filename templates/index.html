@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Patua+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- title of site -->
+    <title>CruiseCare</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/icon" href="logo/favicon.png" />
+
+    <!-- other things... -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/bootsnav.css" />
+    {% include 'components/navbar.html' %}
+
+    <h1>Why you no work</h1>
+
+    <!--the script probably won't work in your browser unless you turn some of the security settings off
+    Firefox: type about:config into the address bar and turn off security.fileuri.strict_origin_policy-->
+    <footer id="footer_placeholder"></footer>
+    <script>
+      $(function () {
+        $("#footer_placeholder").load("./components/footer.html");
+      });
+    </script>
+  </body>
+</html>
